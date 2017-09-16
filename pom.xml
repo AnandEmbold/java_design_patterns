@@ -54,7 +54,7 @@
         <module>builder</module>
         <module>factory-method</module>
         <module>prototype</module>
-<!--         <module>singleton</module>
+        <module>singleton</module>
         <module>adapter</module>
         <module>bridge</module>
         <module>composite</module>
@@ -145,7 +145,7 @@
         <module>cqrs</module>
         <module>event-sourcing</module>
         <module>data-transfer-object</module>
-    <module>throttling</module> -->
+    <module>throttling</module>
   </modules>
 
     <dependencyManagement>

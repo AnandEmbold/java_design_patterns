@@ -54,7 +54,7 @@
         <module>builder</module>
         <module>factory-method</module>
         <module>prototype</module>
-        <module>singleton</module>
+<!--         <module>singleton</module>
         <module>adapter</module>
         <module>bridge</module>
         <module>composite</module>
@@ -145,7 +145,7 @@
         <module>cqrs</module>
         <module>event-sourcing</module>
         <module>data-transfer-object</module>
-    <module>throttling</module>
+    <module>throttling</module> -->
   </modules>
 
     <dependencyManagement>
@@ -476,6 +476,37 @@
                     </skipForProjects>
                 </configuration>
             </plugin>
+			
+		 <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+				<version>3.0.4</version>
+				<configuration>
+					<xmlOutput>true</xmlOutput>
+					<findbugsXmlOutputDirectory>${project.build.directory}/findbugs/${project.name}</findbugsXmlOutputDirectory>
+				</configuration>
+          </plugin>
+			
+		  <plugin>
+				<groupId>com.atlassian.maven.plugins</groupId>
+				<artifactId>maven-clover2-plugin</artifactId>
+				<version>4.0.6</version>
+				<configuration>
+					<generateXml>true</generateXml>
+					<generateHtml>false</generateHtml>
+					<generatePdf>false</generatePdf>
+					<generateJson>false</generateJson>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>site</phase>
+						<goals>
+							<goal>instrument</goal>
+							<goal>clover</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
         </plugins>
     </build>
 

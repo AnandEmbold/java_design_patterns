@@ -58,7 +58,7 @@
         <module>adapter</module>
         <module>bridge</module>
         <module>composite</module>
-        <module>dao</module>
+        <!-- <module>dao</module>
         <module>data-mapper</module>
         <module>decorator</module>
         <module>facade</module>
@@ -144,7 +144,7 @@
         <module>marker</module>
         <module>cqrs</module>
         <module>event-sourcing</module>
-        <module>data-transfer-object</module>
+        <module>data-transfer-object</module> -->
     <module>throttling</module>
   </modules>
 

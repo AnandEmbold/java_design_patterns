@@ -17,7 +17,8 @@
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
---><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+--><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=
+"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.iluwatar</groupId>
     <artifactId>java-design-patterns</artifactId>
@@ -58,7 +59,7 @@
         <module>adapter</module>
         <module>bridge</module>
         <module>composite</module>
-        <!-- <module>dao</module>
+ <!--        <module>dao</module> -->
         <module>data-mapper</module>
         <module>decorator</module>
         <module>facade</module>
@@ -144,7 +145,7 @@
         <module>marker</module>
         <module>cqrs</module>
         <module>event-sourcing</module>
-        <module>data-transfer-object</module> -->
+        <module>data-transfer-object</module>
     <module>throttling</module>
   </modules>
 
@@ -484,9 +485,9 @@
           </plugin>
 			
 		  <plugin>
-				<groupId>com.atlassian.maven.plugins</groupId>
-				<artifactId>maven-clover2-plugin</artifactId>
-				<version>4.0.6</version>
+				<groupId>org.openclover</groupId>
+				<artifactId>clover-maven-plugin</artifactId>
+				<version>4.2.0</version>
 				<configuration>
 					<generateXml>true</generateXml>
 					<generateHtml>false</generateHtml>

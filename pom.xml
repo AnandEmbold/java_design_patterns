@@ -395,6 +395,7 @@
                 </dependencies>
                 <configuration>
                     <argLine>-Xmx1024M ${argLine}</argLine>
+					<testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
             <!-- <plugin>

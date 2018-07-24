@@ -66,7 +66,7 @@
         <module>flyweight</module>
         <module>proxy</module>
         <module>chain</module>
-        <module>command</module>
+        <!-- <module>command</module>
         <module>interpreter</module>
         <module>iterator</module>
         <module>mediator</module>
@@ -145,7 +145,7 @@
         <module>marker</module>
         <module>cqrs</module>
         <module>event-sourcing</module>
-        <module>data-transfer-object</module>
+        <module>data-transfer-object</module> -->
     <module>throttling</module>
   </modules>
 

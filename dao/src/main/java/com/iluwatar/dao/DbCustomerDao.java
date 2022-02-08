@@ -19,6 +19,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
+ * Test Line
  */
 
 package com.iluwatar.dao;
@@ -70,6 +71,7 @@ public class DbCustomerDao implements CustomerDao {
       return StreamSupport.stream(new Spliterators.AbstractSpliterator<Customer>(Long.MAX_VALUE, 
           Spliterator.ORDERED) {
 
+        /* Another Test Line */
         @Override
         public boolean tryAdvance(Consumer<? super Customer> action) {
           try {
@@ -172,11 +174,11 @@ public class DbCustomerDao implements CustomerDao {
    * {@inheritDoc}
    */
   @Override
-  public boolean delete(Customer customer) throws Exception {
+  public boolean delete(Customer customer1) throws Exception {
     try (Connection connection = getConnection();
         PreparedStatement statement = 
             connection.prepareStatement("DELETE FROM CUSTOMERS WHERE ID = ?")) {
-      statement.setInt(1, customer.getId());
+      statement.setInt(1, customer1.getId());
       return statement.executeUpdate() > 0;
     } catch (SQLException ex) {
       throw new Exception(ex.getMessage(), ex);
